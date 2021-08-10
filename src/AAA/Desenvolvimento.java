@@ -1,38 +1,26 @@
 package AAA;
 
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
 
 
-public class Desenvolvimento extends Ong {
-
-	
-	
- 
-	
-	
-
-	
+public class Desenvolvimento extends DadosdasOngs {
 
 
 
-
-	 public Desenvolvimento() {
+	public Desenvolvimento(ArrayList<String> nome,  ArrayList<String> areaDaAtuacao,
+			ArrayList<String> contato, ArrayList<String> descricao) {
+		super(nome,  areaDaAtuacao, contato, descricao);
 		// TODO Auto-generated constructor stub
 	}
-
-
-
-
-
-
-
-
-
+	public Desenvolvimento() {
+		// TODO Auto-generated constructor stub
+	}
 	String nome;
-	String estado;
-	 int idade;
+	
+	 String email;
 	int num1;
 	int num2;
 	int num3 = 0;
@@ -62,15 +50,12 @@ public class Desenvolvimento extends Ong {
 		System.out.println("Por favor digite os seguintes dados para continuar" + "\nDigite o seu nome completo: ");
 		nome=ler.nextLine();
 		
-		System.out.println("Por favor digite a sua idade");
-		idade = ler.nextInt();
+		System.out.println("Por favor digite o seu email");
+		email = ler.nextLine();
 		
 		
-		ler.nextLine();
-		System.out.println("Digite o seu estado: ");
-		estado=ler.nextLine();
-		
-		Pessoa pessoa = new Pessoa(nome,idade , estado);
+	
+		Pessoa pessoa = new Pessoa(nome, email);
 	}
 	
 	
@@ -88,7 +73,8 @@ public class Desenvolvimento extends Ong {
 		delay(2000);
 		System.out.println("\nVocê já ouviu falar sobre a ONGdesvs?");
 		delay(2000);
-		System.out.println("\nÉ um projeto que chegou para fazer a diferença na vida das pessoas, com fundamento de apresentar as ONGS.\nO intuito é trazer visibilidade para incriveis "
+		System.out.println("\nÉ um projeto que chegou para fazer a diferença na vida das pessoas,"
+				+ " com fundamento de apresentar as ONGS.\nO intuito é trazer visibilidade para incriveis "
 		+ "projetos e consequentemente causar um grande impacto social com a tecnologia, ajudando um ao outro");
 		delay(2000);
 			
@@ -110,7 +96,7 @@ public class Desenvolvimento extends Ong {
 			
 			System.out.println("\nVocê já ajudou alguma? 1-SIM || 2-NÃO  ");
 			num2=ler.nextInt();
-    	
+   	
 			while(num2 < 1 || num2 >= 3) {
 				System.out.println("Digite o número correspondente a pergunta.");
 				System.out.println("1 - SIM| 2 - NÃO:");
@@ -130,7 +116,7 @@ public class Desenvolvimento extends Ong {
 				
 			}
 			
-            if (num3==2) {
+           if (num3==2) {
 				
 				System.out.println("Muito obrigado! Esperamos que retorne em breve caso mude de idéia :D ");
 				
@@ -168,33 +154,43 @@ public class Desenvolvimento extends Ong {
 		
 		switch (num1){
 		case 1:
-			System.out.println( getNome().get(0));
-			System.out.println( getContato().get(0));
-			System.out.println( getDescricao().get(0));
-			System.out.println(getId().get(0));
+			System.out.println( getNomeSaude().get(0));
+			System.out.println( );
+			System.out.println( getDescricaoSaude().get(0));
 			break;
 			
 		case 2:
-			System.out.println( getNome().get(1));
-			System.out.println( getContato().get(1));
-			System.out.println( getDescricao().get(1));
-			System.out.println(getId().get(1));
+			System.out.println( getNomeTrabalho().get(0));
+			System.out.println( );
+			System.out.println( getDescricaoTrabalho().get(0));
 			break;
 			
 		case 3:
-			System.out.println( getNome().get(2));
-			System.out.println( getContato().get(2));
-			System.out.println( getDescricao().get(2));
-			System.out.println(getId().get(2));
+			System.out.println( getNomeEducacao().get(0));
+			System.out.println( );
+			System.out.println( getDescricaoEducacao().get(0));
 			break;
 			
 		case 4:
-			System.out.println( getNome().get(3));
-			System.out.println( getContato().get(3));
-			System.out.println( getDescricao().get(3));
-			System.out.println(getId().get(3));
+			for(int i = 0; i < 4;i++) {
+				System.out.println("\n Ong Nº "+i );
+			System.out.println("Nome: "+ getNomeCidadao().get(i));
+			System.out.println( );
+			System.out.println( getDescricaoCidadao().get(i));}
+			System.out.println("\n\n\n" );
+			System.out.println("Qual das Ongs deseja ajudar?\nDigite o numero da ong: ");
+			num1 = ler.nextInt();
+			OngEscolhida(4, num1);
+			
+			break;
+		
+		case 5:
+			System.out.println( getNomeAnimais().get(0));
+			System.out.println( );
+			System.out.println( getDescricaoAnimais().get(0));
 			break;
 		}	
+		Agradecimento();
 	}
 	public static void delay(int ms) {
 	    try {
@@ -204,8 +200,27 @@ public class Desenvolvimento extends Ong {
 	    }
 	}
 	
+	public void OngEscolhida(int setor, int opcoes) {
+		
+		if(setor == 4) {
+			if(opcoes == 0)System.out.println( getContatoCidadao().get(0));
+			if(opcoes == 1)System.out.println( getContatoCidadao().get(1));
+			if(opcoes == 2)System.out.println( getContatoCidadao().get(2));
+			if(opcoes == 3)System.out.println( getContatoCidadao().get(3));
+			}
+			
+			
+			
+		
+		}
+	
+	public void Agradecimento() {
+		System.out.println("Gostariamos de agradecer por você ter ser reservado um momento do seu dia para um bem maior.\n Enviaremos as informações para o seu email: " + email);
+	}
+		
+	}
 	
 	
 	
 	
-}
+	
