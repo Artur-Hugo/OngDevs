@@ -56,7 +56,7 @@ public class Desenvolvimento extends Ong {
 				+ "✿•*¨`*•. (¯`v´¯) (¯`v´¯) .•*¨`*•✿\r\n"
 				+ ". . . ✿•*¨`*•.¸(¯`v´¯)¸.•´*¨`*•✿ . . .\r\n");
 		System.out.println("Iremos fazer algumas perguntas para que possamos te conhecer melhor :)");
-		
+		delay(2000);
 		System.out.println();
 		
 		System.out.println("Por favor digite os seguintes dados para continuar" + "\nDigite o seu nome completo: ");
@@ -84,10 +84,13 @@ public class Desenvolvimento extends Ong {
 		
 		System.out.println();
 		
-		System.out.println("Seja muito bem vindo(a)" +nome + "\nIremos falar um pouco sobre o nosso projeto:" +"\nVocê já ouviu falar sobre a ONGdesvs?"
-		+"\nÉ um projeto que chegou para fazer a diferença na vida das pessoas, com fundamento de apresentar as ONGS.\nO intuito é trazer visibilidade para incriveis "
+		System.out.println("Seja muito bem vindo(a)" +nome + "\nIremos falar um pouco sobre o nosso projeto:");
+		delay(2000);
+		System.out.println("\nVocê já ouviu falar sobre a ONGdesvs?");
+		delay(2000);
+		System.out.println("\nÉ um projeto que chegou para fazer a diferença na vida das pessoas, com fundamento de apresentar as ONGS.\nO intuito é trazer visibilidade para incriveis "
 		+ "projetos e consequentemente causar um grande impacto social com a tecnologia, ajudando um ao outro");
-	
+		delay(2000);
 			
 			System.out.println("Você sabe o que é uma ONG ? 1-SIM || 2-NÃO ");
 			num1=ler.nextInt();
@@ -178,18 +181,28 @@ public class Desenvolvimento extends Ong {
 			System.out.println(getId().get(1));
 			break;
 			
-		
-		}
-		
-		
-		
-		
-		
-		
-		
-		
+		case 3:
+			System.out.println( getNome().get(2));
+			System.out.println( getContato().get(2));
+			System.out.println( getDescricao().get(2));
+			System.out.println(getId().get(2));
+			break;
+			
+		case 4:
+			System.out.println( getNome().get(3));
+			System.out.println( getContato().get(3));
+			System.out.println( getDescricao().get(3));
+			System.out.println(getId().get(3));
+			break;
+		}	
 	}
-	
+	public static void delay(int ms) {
+	    try {
+	        Thread.sleep(ms);
+	    } catch (InterruptedException e) {
+	        System.err.format("IOException: %s%n", e);
+	    }
+	}
 	
 	
 	
