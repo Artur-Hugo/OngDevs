@@ -13,11 +13,10 @@ public abstract  class Ong {
 	protected List<String> descricao = new ArrayList<String>();
 	
 	
-	public Ong(ArrayList<String> nome, ArrayList<String> areaDaAtuacao, ArrayList<String> contato, ArrayList<String> descricao) {
+	public Ong(ArrayList<String> nome, ArrayList<String> areaDaAtuacao,  ArrayList<String> descricao) {
 		
 		this.nome = nome;
 		this.areaDaAtuacao = areaDaAtuacao;
-		this.contato = contato;
 		this.descricao = descricao;
 	}
 

@@ -8,9 +8,9 @@ public class DadosdasOngs extends Ong{
 
 
 
-	public DadosdasOngs(ArrayList<String> nome, ArrayList<String> areaDaAtuacao,
+	public DadosdasOngs(ArrayList<String> nome, 
 			ArrayList<String> contato, ArrayList<String> descricao) {
-		super(nome, areaDaAtuacao, contato, descricao);
+		super(nome, contato, descricao);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -21,7 +21,9 @@ public class DadosdasOngs extends Ong{
 	
 	public List<String> getNomeSaude() {
 		nome.add("Tucca");
-		nome.add("Sa�de Crian�a");
+		nome.add("Saúde Criança");
+		nome.add("Lar Teresa de Jesus");
+		nome.add("Horas de Vida");
 		return nome;
 	}
 	
@@ -30,70 +32,141 @@ public class DadosdasOngs extends Ong{
 				"https://www.tucca.org.br/");
 		contato.add("Telefone: (21) 2512-1123\r\n" + 
 				"");
+		contato.add("Telefone: (31) 3291-1330\nhttps://larteresadejesus.org\r\n" + 
+				"");
+		contato.add("https://www.horasdavida.org.br\r\n" + 
+				"");
 		return contato;
 	}
 	
 	public List<String> getDescricaoSaude() {
-		areaDaAtuacao.add("A TUCCA (Associa��o para Crian�as e Adolescentes com C�ncer)"
-				+ " foi fundada em 1998 por m�dicos, pais de pacientes e representantes da sociedade civil, "
-				+ "com a proposta de elevar as taxas de cura e melhorar a qualidade de vida de crian�as");
+		descricao.add("A TUCCA (Associação para Crianças e Adolescentes com Câncer)"
+				+ " foi fundada em 1998 por médicos, pais de pacientes e representantes da sociedade civil, "
+				+ "com a proposta de elevar as taxas de cura e melhorar a qualidade de vida de crianças");
 		
-		areaDaAtuacao.add("Fundada em 1991, pela Dra. Vera Cordeiro, m�dica e cl�nica geral, "
-				+ "com especializa��o em Psicossom�tica, a Associa��o Sa�de Crian�a (ASC) tem a miss�o de "
-				+ "promover a transforma��o de fam�lias em situa��o de vulnerabilidade social.\r\n" + 
-				"O trabalho da institui��o, localizada no Rio de Janeiro, � feito de forma multidisciplinar"
-				+ " e integrada. Favorecendo o desenvolvimento humano, a institui��o oferece programas que atuam "
-				+ "nas 05 �reas: sa�de, moradia, cidadania, renda e educa��o.\r\n" + 
+		descricao.add("Fundada em 1991, pela Dra. Vera Cordeiro, médica e clínica geral, "
+				+ "com especialização em Psicossomática, a Associação Saúde Criança (ASC) tem a missão de "
+				+ "promover a transformação de famílias em situação de vulnerabilidade social.\r\n" + 
+				"O trabalho da instituição, localizada no Rio de Janeiro, é feito de forma multidisciplinar"
+				+ " e integrada. Favorecendo o desenvolvimento humano, a instituição oferece programas que atuam "
+				+ "nas 05 áreas: saúde, moradia, cidadania, renda e educação.\r\n" + 
 				"");
-		return areaDaAtuacao;
+		
+		
+		descricao.add("A ONG de Belo Horizonte, Lar Teresa de Jesus,acolhe e presta atendimento a pacientes "
+				+ "\nportadores de câncer, que moram no interior de Minas Gerais. A casa de apoio preza pelo bem"
+				+ "\n estar, qualidade de vida e amparo integral para os assistidos. Ao longo de 18 anos de existência, "
+				+ "\na ONG já atendeu mais de 12.000 pacientes e seus acompanhantes. Com 04 unidades em Belo Horizonte (MG),"
+				+ "\n a instituição oferece serviços como: hospedagem ao acolhido e 01 acompanhante , refeições, "
+				+ "\ntransporte para os hospitais, assistência social, psicológica, nutricional e enfermagem.");
+		
+		descricao.add("Uma rede de voluntariado que atua de forma humanizada com o intuito de diminuir "
+				+ "\nas lacunas existentes no sistema de saúde atual. A instituição atende casos de baixa "
+				+ "\ncomplexidade, com atendimentos e exames com hora marcada nos consultórios. A Ong Horas "
+				+ "\nde Vida atua em São Paulo (SP) e Curitiba (PR) e  atende pacientes associados de 12 instituições."
+				+ "\n Entre os serviços prestados estão: mapeamento populacional, triagem (para entender as necessidades"
+				+ "\n dos pacientes e direcioná-los para as devidas especialidades.");
+		
+		return descricao;
 	}
 	
 	
 	public List<String> getNomeTrabalho() {
-		nome.add("Cruzando hist�rias");
+		nome.add("Cruzando histórias");
+		nome.add(" Worldpackers  ");
+		nome.add("Livre de Trabalho Infantil");
 		return nome;
 	}
 	
 	public List<String> getContatoTrabalho() {
 		contato.add("(11) 97033-6229");
+		contato.add("https://www.worldpackers.com/pt-BR/search/south_america/brazil");
+		contato.add("https://livredetrabalhoinfantil.org.br/institucional/quem-somos/");
 		return contato;
 	}
 	
 	public List<String> getDescricaoTrabalho() {
-		areaDaAtuacao.add("Uma organiza��o civil que escuta, acolhe e desenvolve mulheres que est�o sem trabalho e renda.");
-		return areaDaAtuacao;
+		descricao.add("Uma organização civil que escuta, acolhe e desenvolve mulheres que estão sem trabalho e renda.");
+		descricao.add("A Worldpackers é uma comunidade colaborativa que te conecta com anfitriões "
+				+ "\nacolhedores do mundo inteiro onde você pode viajar trocando suas habilidades por hospedagem.");
+		descricao.add("O Criança Livre de Trabalho Infantil é um projeto idealizado a partir dos debates promovidos "
+				+ "\njunto ao Ministério Público do Trabalho (MPT) no Fórum Paulista de Prevenção e Erradicação do Trabalho Infantil, "
+				+ "\nna perspectiva de análise da relação entre racismo e trabalho infantil e a compreensão da educação antirracista também "
+				+ "\ncomo uma estratégia para o seu enfrentamento.\r\n" + 
+				"\r\n" + 
+				"Criado em 2016 pela organização da sociedade civil Cidade Escola Aprendiz, o projeto então chamado “Rede Peteca – Chega de Trabalho Infantil”, visando a promoção dos direitos da criança e do adolescente a partir da erradicação do trabalho infantil, acolhe no ano 2021 uma reformulação e o novo nome. Com isso, foi criada a seção de educação antirracista e o desenvolvimento dos conteúdos e ações, com apoio do MPT e do Fórum Nacional de Prevenção e Erradicação do Trabalho Infantil (FNPETI).\r\n" + 
+				"");
+		return descricao;
 	}
 	
 	public List<String> getNomeEducacao() {
-		nome.add("Cruzando hist�rias");
+		nome.add("Cruzando histórias");
+		nome.add(" Fundação Abrinq");
+		nome.add(" Projeto Urerê");
+		nome.add("Associação Vaga Lume");
 		return nome;
 	}
 	
 	public List<String> getContatoEducacao() {
 		contato.add("0800 707 1027\r\n" + 
 				"https://brazil.generation.org/");
+		contato.add("https://www.fadc.org.br/");
+		
+		contato.add("Telefone: (21) 3881-6219/https://www.projetouere.org.br\r\n" + 
+				"");
+		
+		contato.add("https://vagalume.org.br\r\n" + 
+				"Telefone: (11) 3032-6032");
 		return contato;
 	}
 	
 	public List<String> getDescricaoEducacao() {
-		areaDaAtuacao.add("Nossa miss�o � transformar sistemas de educa��o para o "
-				+ "emprego de maneira a preparar, colocar e apoiar pessoas em carreiras "
-				+ "transformadoras que, de outra forma, seriam inacess�veis.");
-		return areaDaAtuacao;
+		descricao.add("\nGeneration Brasil - Nossa missão é transformar sistemas de educação para o emprego de maneira a preparar,"
+				+ "\n colocar e apoiar pessoas em carreiras transformadoras que, de outra forma, seriam inacessíveis" );
+		
+		descricao.add(" Sede em São Paulo, mas realiza trabalho em todo o país\r\n" + 
+				"A Fundação Abrinq pelos Direitos da Criança e do Adolescente foi criada em 13 de fevereiro de 1990, "
+				+ "\npautada pela Convenção Internacional dos Direitos da Criança (ONU, 1989), "
+				+ "\npela Constituição Federal Brasileira (1988) e pelo Estatuto da Criança e do Adolescente (1990). "
+				+ "\nA instituição promove a implementação de ações públicas, fortalecimento de organizações"
+				+ "\n não governamentais e governamentais para prestação de serviços ou defesa de direitos, e "
+				+ "\narticulação política e social em prol dos direitos da criança e do adolescente.\r\n" + 
+				"");
+		
+		
+		descricao.add("Sede no Rio de Janeiro\r\n" + 
+				"O Projeto UERÊ, localizado no Complexo da Favela da Maré, na comunidade da Baixa do Sapateiro, "
+				+ "\natende 430 crianças e jovens anualmente e mais de 130 mil crianças já têm contato com a Pedagogia"
+				+ "\n UERÊ-MELLO em diversas cidades do Brasil. A organização é uma escola com uma metodologia desenhada "
+				+ "\npara crianças e jovens com bloqueios cognitivos e emocionais, devido à exposição\r\n" + 
+				"");
+		
+		
+		descricao.add("Sede em São Paulo, mas atende todas as áreas da floresta amazônica brasileira"
+				+ "\n (estados do Acre, Amapá, Amazonas, Maranhão, Mato Grosso, Pará, Rondônia, Roraima e Tocantins)\r\n" + 
+				"\nDesde quando foi criada, em 2001, a Associação Vaga Lume atua em comunidades rurais da Amazônia Legal brasileira,"
+				+ "\n desenvolvendo projetos de educação, cultura, e estimulando, principalmente, a leitura, escrita e oralidade."
+				+ "\n A partir do trabalho voluntário em 23 municípios na região da Amazônia Legal brasileira e na cidade de São Paulo,"
+				+ "\n a instituição intensificou seu intercâmbio nas comunidades e ampliou o alcance das suas ações. Atualmente 22 mil"
+				+ "\n crianças, jovens e adultos participam das atividades da ONG. Além disso, 159 bibliotecas foram criadas e quase 100 "
+				+ "\nmil livros foram distribuídos em áreas de difícil acesso.\r\n" + 
+				"");
+		
+		return descricao;
 	}
 	
 	public List<String> getNomeCidadao() {
 		nome.add("Moradia e Cidadania");
 		nome.add("Amigos do Bem");
 		nome.add("Tem Gente com Fome");
-		nome.add("Ampara�");
+		nome.add("Amparaí");
 		nome.add("Banco de Alimentos");
 		return nome;
 	}
 	
 	public List<String> getContatoCidadao() {
 		contato = new ArrayList<String>();
-		contato.add("https://moradiaecidadaniamg.org.br/sobre-nos");
+		contato.add("\nhttps://moradiaecidadaniamg.org.br/sobre-nos/"+"Para ajuda-lá basta acessar o site e realizar uma doação ");
 		contato.add("\r\n" + 
 				"https://www.amigosdobem.org/\r\n" + 
 				"");
@@ -106,21 +179,29 @@ public class DadosdasOngs extends Ong{
 	}
 	
 	public List<String> getDescricaoCidadao() {
-		areaDaAtuacao.add("ONG Moradia e Cidadania - teve origem no Comit�"
-				+ " da A��o da Cidadania criado em 1993 pelos empregados da Caixa Econ�mica Federal. � "
-				+ "respons�vel por iniciativas como: educa��o, gera��o de trabalho e renda e apoio �s a��es de"
-				+ " combate � fome e � mis�ria para comunidades de baixa renda");
-		areaDaAtuacao.add("ONG criada h� 27 anos se tornou um dos maiores grupos de volunt�rios ativos no pa�s,"
+		descricao.add("ONG Moradia e Cidadania - teve origem no Comitê da Ação da Cidadania criado em "
+				+ "\n1993 pelos empregados da Caixa Econômica Federal. É responsável por iniciativas como: educação, geração de trabalho e renda"
+				+ "\n e apoio às ações de combate à fome e à miséria para comunidades de baixa renda");
+		
+		
+		descricao.add("ONG criada há 27 anos se tornou um dos maiores grupos de voluntários ativos no país,"
 				+ " ajudando mais de 75 mil pessoas nos estados de Alagoas, "
-				+ "Cear� e Pernambuco e servindo mais de 180 mil refei��es todos os meses.");
-		areaDaAtuacao.add("A Coaliz�o Negra Por Direitos, em parceria com a Anistia Internacional, Oxfam Brasil, Redes da Mar�,"
-				+ " A��o Brasileira de Combate �s Desigualdades, e outros, lan�aram uma campanha para arrecadar "
-				+ "fundos e para a��es emergenciais no enfrentamento � fome, � mis�ria e � viol�ncia na pandemia de Covid-19.");
-		areaDaAtuacao.add("Criado em 20 de mar�o de 2020, o Ampara� tem como objetivo distribuir diariamente "
-				+ "refei��es para pessoas em situa��o de vulnerabilidade social em Porto Alegre");
-		areaDaAtuacao.add("ONG ajuda a combater o desperd�cio e alimenta milhares de pessoas em situa��o de inseguran�a alimentar."
-				+ " Voc� pode ajudar de forma pontual ou recorrente");
-		return areaDaAtuacao;
+				+ "Ceará e Pernambuco e servindo mais de 180 mil refeições todos os meses.");
+		
+		
+		
+		descricao.add("A Coalizão Negra Por Direitos, em parceria com a Anistia Internacional, Oxfam Brasil, Redes da Maré,"
+				+ " Ação Brasileira de Combate às Desigualdades, e outros, lançaram uma campanha para arrecadar "
+				+ "fundos e para ações emergenciais no enfrentamento à fome, à miséria e à violência na pandemia de Covid-19.");
+		
+		
+		descricao.add("Criado em 20 de março de 2020, o Amparaí tem como objetivo distribuir diariamente "
+				+ "refeições para pessoas em situação de vulnerabilidade social em Porto Alegre");
+		
+		
+		descricao.add("ONG ajuda a combater o desperdício e alimenta milhares de pessoas em situação de insegurança alimentar."
+				+ " Você pode ajudar de forma pontual ou recorrente");
+		return descricao;
 	}
 	
 	public List<String> getNomeAnimais() {
@@ -134,10 +215,10 @@ public class DadosdasOngs extends Ong{
 	}
 	
 	public List<String> getDescricaoAnimais() {
-		areaDaAtuacao.add("A AMPARA Animal (Associa��o de Mulheres Protetoras dos Animais Rejeitados e Abandonados) "
-				+ "� uma OSCIP sem fins lucrativos que ajuda abrigos e protetores independentes com ra��o, medicamentos "
-				+ "e atendimento veterin�rio.");
-		return areaDaAtuacao;
+		descricao.add("A AMPARA Animal (Associação de Mulheres Protetoras dos Animais Rejeitados e Abandonados) "
+				+ "é uma OSCIP sem fins lucrativos que ajuda abrigos e protetores independentes com ração, medicamentos "
+				+ "e atendimento veterinário.");
+		return descricao;
 	}
 	
 }
