@@ -63,6 +63,8 @@ public class Desenvolvimento extends DadosdasOngs {
 	
 	public void Apresentar() {
 		
+		try {
+		
 		System.out.println();
 		
 		System.out.println("Seja muito bem vindo(a), " +nome + "!\n" + "\nIremos falar um pouco sobre o nosso trabalho, mas antes;");
@@ -138,11 +140,17 @@ public class Desenvolvimento extends DadosdasOngs {
 				System.out.println("Tem preferência por algum setor de apoio? "); //vetores ONG
 				Setores();
 			}
+		}catch(InputMismatchException e) {
+			System.out.println("\n\n\nErro no Sistema. Digite  1 => SIM || 2 => NÃO.\n\n Sistema Finalizado");
+		}
 			
 	}
 	
 	
 	public void Setores() {
+		
+		try {
+		
 		System.out.println("Por favor, selecione um número para o segmento de interesse:");
 		System.out.println("1 - Saúde  ");
 		System.out.println("2 - Trabalho ");
@@ -164,7 +172,7 @@ public class Desenvolvimento extends DadosdasOngs {
 			//System.out.println("\n\n\n" );
 			System.out.println("\nAlguma das ONG's te interessou mais ?\nPor favor, selecione o numero correspondente: ");
 			num1 = ler.nextInt();
-			OngEscolhida(1, (num1-1));
+			OngEscolhida(1, num1);
 			break;
 			
 		case 2:
@@ -175,7 +183,7 @@ public class Desenvolvimento extends DadosdasOngs {
 			System.out.println( getDescricaoTrabalho().get(i));}
 		System.out.println("\nAlguma das ONG's te interessou mais ?\nPor favor, selecione o numero correspondente: ");
 		num1 = ler.nextInt();
-		OngEscolhida(2, (num1-1));
+		OngEscolhida(2, num1);
 			break;
 			
 		case 3:
@@ -186,7 +194,7 @@ public class Desenvolvimento extends DadosdasOngs {
 			System.out.println( getDescricaoEducacao().get(i));}
 			System.out.println("\nAlguma das ONG's te interessou mais ?\nPor favor, selecione o numero correspondente: ");
 			num1 = ler.nextInt();
-			OngEscolhida(3, (num1-1));
+			OngEscolhida(3, num1);
 			break;
 			
 		case 4:
@@ -198,12 +206,12 @@ public class Desenvolvimento extends DadosdasOngs {
 			System.out.println("\n\n\n" );
 			System.out.println("\nAlguma das ONG's te interessou mais ?\nPor favor, selecione o numero correspondente: ");
 			num1 = ler.nextInt();
-			OngEscolhida(4, (num1-1));
+			OngEscolhida(4, num1);
 			
 			break;
 		
 		case 5:
-			for(int i = 0; i < 4;i++) {
+			for(int i = 0; i < 3;i++) {
 				System.out.println("============================================================================" + "\nOPÇÃO " + +(i+1) );
 			System.out.println( getNomeAnimais().get(i));
 			System.out.println( );
@@ -211,10 +219,13 @@ public class Desenvolvimento extends DadosdasOngs {
 			System.out.println("\n\n\n" );
 			System.out.println("Alguma das ONG's te interessou mais ?\\nPor favor, selecione o numero correspondente: ");
 			num1 = ler.nextInt();
-			OngEscolhida(5, (num1-1));
+			OngEscolhida(5, num1);
 			break;
 		}	
-		Agradecimento();
+		Agradecimento();}catch(InputMismatchException e) {
+			System.out.println("\n\n\nErro no Sistema. Digite  1 => SIM || 2 => NÃO.\n\n Sistema Finalizado");
+		}
+			
 	}
 	public static void delay(int ms) {
 	    try {
@@ -225,6 +236,7 @@ public class Desenvolvimento extends DadosdasOngs {
 	}
 	
 	public void OngEscolhida(int setor, int opcoes) {
+		System.out.println("\n========================================\n");
 		if(setor == 4) {
 			if(opcoes == 1) {System.out.println(getContatoCidadao().get(0));}
 			if(opcoes == 2) {System.out.println( getContatoCidadao().get(1));}
@@ -257,7 +269,7 @@ public class Desenvolvimento extends DadosdasOngs {
 		}
 	
 	public void Agradecimento() {
-		System.out.println("Ƹ̵̡Ӝ̵̨̄Ʒ ♥�?�♥ ¸.•*´ ♡♥ �?� ★ ♡♥ ☆ `*•.¸ ♥�?�♥ Ƹ̵̡Ӝ̵̨̄Ʒ ♥�?�♥ ¸.•Ƹ̵̡Ӝ̵̨̄Ʒ ♥�?�♥ ¸.•*´ ♡♥ �?� ★ ♡♥ ☆ `*•.¸ ♥�?�♥ Ƹ̵̡Ӝ̵̨̄Ʒ ♥�?�♥ ¸.•\r\n"
+		System.out.println("\nƸ̵̡Ӝ̵̨̄Ʒ ♥�?�♥ ¸.•*´ ♡♥ �?� ★ ♡♥ ☆ `*•.¸ ♥�?�♥ Ƹ̵̡Ӝ̵̨̄Ʒ ♥�?�♥ ¸.•Ƹ̵̡Ӝ̵̨̄Ʒ ♥�?�♥ ¸.•*´ ♡♥ �?� ★ ♡♥ ☆ `*•.¸ ♥�?�♥ Ƹ̵̡Ӝ̵̨̄Ʒ ♥�?�♥ ¸.•\r\n"
 				+ "*♡♥ �?� ★ ♡♥ Gostaríamos de agradecer por você ter reservado um momento do seu dia para um bem maior.!  ☆ *•.¸ ♥�?�\r\n"
 				+ "♥ Ƹ̵̡Ӝ̵̨̄Ʒ ♥�?�♥ ¸.•*´♡♥ �?� ★ ♡♥ ☆ *•.¸ ♥�?�♥ Ƹ̵̡Ӝ̵̨̄Ʒ♥�?�♥ ♥ Ƹ̵̡Ӝ̵̨̄Ʒ ♥�?�♥ ¸.•*´♡♥ �?� ★ ♡♥ ☆ *•.¸ ♥�?�♥ Ƹ̵̡Ӝ̵̨̄Ʒ♥�?�♥¸\n Enviaremos as informações para o seu email: " + email);
 	}
